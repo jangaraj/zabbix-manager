@@ -1,64 +1,19 @@
-Zabbix Manager
-==============
+Fancy Zabbix stuff searcher
+===========================
 
-One click/command management of your Zabbix server/agent/proxy. Tool similar to 
-your package manager (apt/yum), but just for Zabbix.
+Visit http://monitoringartist.github.io/zabbix-searcher
+
+Quick, responsive searcher, which searchs across all 3 main Zabbix sources:
+
+- [Github Zabbix Community Repos](https://github.com/zabbix/zabbix-community-repos) - 340+ projects
+- [Share Zabbix](https://share.zabbix.com/) - 180+ projects
+- [Zabbix Wiki](http://zabbix.org/wiki/Zabbix_Templates) - 130+ projects
+
+Please donate to author, so he can continue to publish another awesome projects 
+for free:
 
 [![Paypal donate button](http://jangaraj.com/img/github-donate-button02.png)]
-(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4)
-   
-TODO
-====
-
-- search
-  try to search provided string in all available actions
-  if -a (all) is used then also [Zabbix Github community repo]
-  (https://github.com/zabbix/zabbix-community-repos) and [Zabbix Share]
-  (https://share.zabbix.com/) are used
-  
-- list
-  listing of available action
-  
-- installs <action>
-  execute selected Zabbix server action
-
-- installa <action>
-  execute selected Zabbix agent action
-  
-- installp <action>     
-  execute selected Zabbix proxy action
-  
-For example:
-
-- search keyword docker:
-
-```
-./zm.py search -a docker
-```  
-
-- install (compile) Docker module for Zabbix agent:
-
-```
-./zm.py installa module-docker-(monitoringartist)
-```  
-
-- install (import) Docker template for Zabbix server:
-
-```
-./zm.py installs template-docker-(monitoringartist)
-```
-
-- install (enable) Selinux for Zabbix agent:
-
-```
-./zm.py installs enable-selinux-(monitoringartist)
-```
-
-- install (execute) agent troubleshooting:
-
-```
-./zm.py installa troubleshooting-(monitoringartist)
-```
+(https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8LB6J222WRUZ4) 
 
 Author
 ======
